@@ -1,0 +1,26 @@
+// A simple example of a class diagram
+// {type:class}
+// {generate:true}
+
+[note: You can stick notes on diagrams too!{bg:wheat}]
+
+// Objects
+// Note: Objects can be defined inline with relationship, but it's
+// maybe cleaner to do them above like this.
+[Category]
+[Customer|#counter;+Forename;+Surname;+HashedPassword;-Salt|+Login(user,pass);+Logout();+Register()]
+[Customer]-[note: A note attached to an element]
+[DeliveryMethod]
+[International]
+[LineItem]
+[National]
+[Order]
+
+// Relationships
+[Customer]<>1-orders 0..*>[Order]
+[Order]++->[LineItem]
+[Order]-1>[DeliveryMethod]
+[Order]->[Product]
+[Category]<-.->[Product]
+[DeliveryMethod]^[National]
+[DeliveryMethod]<-[International]

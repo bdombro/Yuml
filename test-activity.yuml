@@ -1,0 +1,8 @@
+// {type:activity}
+// {generate:true}
+
+(start)-|a|
+|a|->(Grind Coffee)->(Pour Shot)->(Froth Milk)->(Pour)->|b|
+|a|->(Fry Eggs)->(Make Toast)->(Butter Toast)->|b|
+|b|->(Enjoy)-><c>[want another coffee]->(Grind Coffee)
+<c>[ready to go]->(end)

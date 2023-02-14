@@ -1,0 +1,11 @@
+// A simple example of a usecase diagram
+// {type:usecase}
+// {generate:true}
+
+[Customer]-(Sign In)
+[Customer]-(Buy Products)
+(Buy Products)>(Browse Products)
+(Buy Products)>(Checkout)
+(Checkout)<(Add Card)
+(Checkout)
+[Office Staff]-(Processs Order)
