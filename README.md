@@ -2,6 +2,8 @@
 
 This is a set of yUML files to demonstrate the yUML language and [VSCode Extension](https://github.com/jaime-olivares/vscode-yuml). Together, they form an easy-to-use way to generate programming diagrams from code.
 
+![yuml-demo.png](yuml-demo.png)
+
 - [yUML](http://yuml.me/) is an extended UML diagram programming language
 - [vscode-yuml](https://github.com/jaime-olivares/vscode-yuml)
 
